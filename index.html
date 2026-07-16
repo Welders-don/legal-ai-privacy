@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Legal AI</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.7; }
+  h1 { font-size: 1.8em; margin-bottom: 4px; }
+  h2 { font-size: 1.1em; margin-top: 32px; color: #333; }
+  p, li { font-size: 0.97em; }
+  a { color: #1a73e8; }
+  footer { margin-top: 48px; font-size: 0.85em; color: #888; }
+</style>
+</head>
+<body>
+<h1>Privacy Policy</h1>
+<p><strong>Extension:</strong> Legal AI<br>
+<strong>Last updated:</strong> July 16, 2026</p>
+
+<h2>1. Overview</h2>
+<p>Legal AI is a Chrome browser extension that explains legal and financial documents (leases, terms of service, NDAs, insurance policies, medical bills, and similar) in plain language. This privacy policy describes what data we collect, how it is used, how it is stored, and with whom it is shared.</p>
+
+<h2>2. The Document You Analyze</h2>
+<p>When you paste text, select text on a page, or upload a PDF for analysis, that content is sent over an encrypted connection to our server, which forwards it to a third-party AI provider (Google Gemini API and/or OpenRouter, which routes to models such as GPT-5 nano) to generate the analysis.</p>
+<ul>
+  <li><strong>We do not store the document you analyze.</strong> It is used only to generate your one-time result and is not written to our database or logs.</li>
+  <li>We do not use your documents to train any AI model.</li>
+  <li>The AI provider processes the request under its own privacy policy: <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://openrouter.ai/privacy">OpenRouter Privacy Policy</a>.</li>
+</ul>
+
+<h2>3. Anonymous Fingerprint (Abuse Prevention)</h2>
+<p>To enforce the daily free-usage limit fairly, the extension computes a hash derived from non-identifying browser and device signals (such as canvas rendering and hardware characteristics), similar to a device fingerprint. This hash:</p>
+<ul>
+  <li>Is generated and stored locally in your browser (Chrome local storage).</li>
+  <li>Is sent to our server together with your request to count daily usage against the free limit.</li>
+  <li>Is not derived from your name, email, or any personally identifiable information, and is not used for advertising, cross-site tracking, or profiling.</li>
+</ul>
+
+<h2>4. Installation &amp; Uninstall Analytics</h2>
+<ul>
+  <li><strong>Install:</strong> A randomly generated identifier is created on install and sent to our server together with the extension version, so we can count installs. This identifier is random and not linked to your identity.</li>
+  <li><strong>Uninstall:</strong> When you uninstall the extension, your browser opens a short farewell page on our server, which records the uninstall event. On that page you may optionally tell us why you left, by selecting a reason and/or writing a free-text comment. This is entirely optional and does not require or collect your email address.</li>
+</ul>
+
+<h2>5. Optional Feedback</h2>
+<p>The extension may occasionally show a short in-product rating prompt. If you leave a low rating, you can optionally submit a free-text comment. We do not require or collect your email address for this feedback.</p>
+
+<h2>6. Data We Do Not Collect</h2>
+<p>We do not require account creation or sign-in. We do not collect your email address, name, browsing history, or the URLs of pages you visit (aside from the specific page text you explicitly choose to analyze).</p>
+
+<h2>7. How We Use Your Data</h2>
+<ul>
+  <li>The anonymous fingerprint hash is used solely to enforce the daily free-usage limit and prevent abuse.</li>
+  <li>Anonymous install/uninstall identifiers and optional feedback are used to understand usage, detect broken releases, and improve the product.</li>
+  <li>We do not use any collected data for advertising, behavioral tracking, or profiling, and we do not sell data to third parties.</li>
+</ul>
+
+<h2>8. Data Storage and Retention</h2>
+<p>Server-side, we store only: the fingerprint hash and daily usage counters (rolling window, reset every day), anonymous install/uninstall event counts, and any optional feedback text you chose to submit. The document text or PDF you analyze is never written to this storage. Data may be deleted in any of the following cases:</p>
+<ul>
+  <li>Daily rate-limit counters are automatically cleared every day as part of normal operation.</li>
+  <li>You request deletion of your feedback or fingerprint record by contacting us (see Section 11).</li>
+  <li>We periodically purge old anonymous event logs that are no longer needed for usage statistics.</li>
+</ul>
+
+<h2>9. Data Sharing</h2>
+<p>We do not sell, rent, or share user data with advertising networks or data brokers. The only external services involved are the AI providers used to generate your document analysis (Section 2).</p>
+
+<h2>10. Permissions</h2>
+<ul>
+  <li><strong>sidePanel:</strong> To show the analysis interface in Chrome's side panel.</li>
+  <li><strong>storage:</strong> To store your settings and the anonymous fingerprint locally.</li>
+  <li><strong>activeTab / scripting / host permissions:</strong> To read the text of the current page when you click "Explain this page." Side panels do not retain the temporary activeTab grant after you navigate to a new page, so broader host access is required for this feature to keep working reliably.</li>
+</ul>
+
+<h2>11. Data Security</h2>
+<p>All network communication (document analysis, anonymous statistics, feedback) uses encrypted HTTPS connections.</p>
+
+<h2>12. Your Rights</h2>
+<p>Since we do not collect personally identifiable information, uninstalling the extension removes all locally stored data. For any data requests regarding server-side anonymous records, contact us at the address below.</p>
+
+<h2>13. Changes to This Policy</h2>
+<p>We may update this policy from time to time. The "Last updated" date at the top will reflect the latest revision.</p>
+
+<h2>14. Contact</h2>
+<p>Questions about this privacy policy or data requests: <a href="mailto:telesinimarco@gmail.com">telesinimarco@gmail.com</a></p>
+
+<footer>&copy; 2026 Legal AI. AI-generated analysis. Not legal advice.</footer>
+</body>
+</html>
