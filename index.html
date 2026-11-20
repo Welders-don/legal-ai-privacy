@@ -16,13 +16,13 @@
 <body>
 <h1>Privacy Policy</h1>
 <p><strong>Extension:</strong> Legal AI<br>
-<strong>Last updated:</strong> July 16, 2026</p>
+<strong>Last updated:</strong> November 20, 2026</p>
 
 <h2>1. Overview</h2>
 <p>Legal AI is a Chrome browser extension that explains legal and financial documents (leases, terms of service, NDAs, insurance policies, medical bills, and similar) in plain language. This privacy policy describes what data we collect, how it is used, how it is stored, and with whom it is shared.</p>
 
 <h2>2. The Document You Analyze</h2>
-<p>When you paste text, select text on a page, or upload a PDF for analysis, that content is sent over an encrypted connection to our server, which forwards it to a third-party AI provider (Google Gemini API and/or OpenRouter, which routes to models such as GPT-5 nano) to generate the analysis.</p>
+<p>When you paste text, select text on a page, or upload a PDF for analysis, that content is sent over an encrypted connection to our server, which forwards it to a third-party AI provider (Google Gemini API and/or OpenRouter, which routes to OpenAI models such as GPT-6 Luna) to generate the analysis.</p>
 <ul>
   <li><strong>We do not store the document you analyze.</strong> It is used only to generate your one-time result and is not written to our database or logs.</li>
   <li>We do not use your documents to train any AI model.</li>
@@ -33,7 +33,7 @@
 <p>To enforce the daily free-usage limit fairly, the extension computes a hash derived from non-identifying browser and device signals (such as canvas rendering and hardware characteristics), similar to a device fingerprint. This hash:</p>
 <ul>
   <li>Is generated and stored locally in your browser (Chrome local storage).</li>
-  <li>Is sent to our server together with your request to count daily usage against the free limit.</li>
+  <li>Is sent to our server together with your request to count daily usage against the free limit. Together with the hash we also record the IP address of the request (used only for the same limit and abuse prevention).</li>
   <li>Is not derived from your name, email, or any personally identifiable information, and is not used for advertising, cross-site tracking, or profiling.</li>
 </ul>
 
@@ -57,10 +57,10 @@
 </ul>
 
 <h2>8. Data Storage and Retention</h2>
-<p>Server-side, we store only: the fingerprint hash and daily usage counters (rolling window, reset every day), anonymous install/uninstall event counts, and any optional feedback text you chose to submit. The document text or PDF you analyze is never written to this storage. Data may be deleted in any of the following cases:</p>
+<p>Server-side, we store only: the fingerprint hash, the IP address of requests, and daily usage counters (rolling window, reset every day), anonymous install/uninstall event counts, and any optional feedback text you chose to submit. The document text or PDF you analyze is never written to this storage. Data may be deleted in any of the following cases:</p>
 <ul>
   <li>Daily rate-limit counters are automatically cleared every day as part of normal operation.</li>
-  <li>You request deletion of your feedback or fingerprint record by contacting us (see Section 11).</li>
+  <li>You request deletion of your feedback or fingerprint record by contacting us (see Section 14).</li>
   <li>We periodically purge old anonymous event logs that are no longer needed for usage statistics.</li>
 </ul>
 
